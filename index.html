@@ -3,74 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifolio</title>
-    <style>
-        body{
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        .cabecalho{
-            background-color: red;
-            text-align: center;
-            font-weight: bold;
-            padding: 10px;
-        }
-        nav a{
-            padding: 10px;
-        }
-    </style>
+    <title>Portfólio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
     <header class="cabecalho">
-            <h1 id="nome">Kayke Ragoso</h1>
-            <nav id="links">
-                <a href="#">Linkedln</a>
-                <a href="#">GitHub</a>
-                <a href="#">Instagram</a>
-            </nav>
+        <h1 id="nome">Portfólio de Kayke Ragoso</h1>
+        <nav id="links">
+            <a href="#">LinkedIn</a>
+            <a href="#">GitHub</a>
+            <a href="#">Instagram</a>
+        </nav>
     </header>
+
     <main>
         <section class="bibliografia">
-            <h2>Bibliografia</h2>
+            <h2>Sobre Mim</h2>
             <article>
-                <p>Olá, me chamo Kayke Ragoso. Adoro Técnologia!!! Gosto muito mesmo. Quer fazer network? Me siga nas redes sociais!!! <br>
-                    Comecei a me interessar por tecnologia desde muito novo, meu sonho era trabalhare com games, aos invés de fullstack. Mas com o passar dos anos me identifiquei e estou correndo atrás desse sonho. Estou estudando muito para conseguir minha vaga. Sei que vai ser dificil, pois a concorrencia é muito elevada.</p>
+                <p>Olá, me chamo Kayke Ragoso. Adoro tecnologia e estou sempre buscando aprender mais!<br>
+                Desde pequeno, meu sonho era trabalhar com jogos, mas com o tempo me apaixonei pelo desenvolvimento web e me dedico a me tornar um desenvolvedor fullstack.</p>
             </article>
             <article>
-                <p>
-                    <strong>Objetivos: SER FULLSTACK!</strong>
-                </p>
+                <p><strong>Objetivo:</strong> Tornar-me um desenvolvedor Fullstack profissional.</p>
             </article>
         </section>
-        <section class="Linguagem">
+
+        <section class="linguagens">
             <h2>Linguagens que domino</h2>
-            <div class="linguagens">
-                <img src="HTML5" alt="Linguagem HTML5">
+            <div class="linguagem">
+                <img src="imagens/html5.png" alt="HTML5">
+                <p>HTML5</p>
             </div>
-            <div class="linguagens">
-                <img src="CSS3" alt="Linguagem CSS3">
+            <div class="linguagem">
+                <img src="imagens/css3.png" alt="CSS3">
+                <p>CSS3</p>
             </div>
-            <div class="linguagens">
-                <img src="JavaScript" alt="Linguagem JavaScript">
+            <div class="linguagem">
+                <img src="imagens/javascript.png" alt="JavaScript">
+                <p>JavaScript</p>
             </div>
         </section>
-        <section class="Projetos">
-            <h2>Meu Projetos</h2>
-            <div class="projeto">
-                <img src="ConectCliente" alt="ConectCliente">
-                <p>Projeto ConectClient</p>
+
+        <section class="projetos">
+            <h2>Meus Projetos</h2>
+            <div class="projeto" id="conectCliente">
+                <img src="imagens/conectcliente.png" alt="ConectCliente">
+                <p>ConectCliente - Sistema de gestão para atendimento ao cliente</p>
             </div>
-            <div class="projeto">
-                <img src="DroneWise" alt="DroneWise">
-                <p>Projeto DroneWise</p>
+            <div class="projeto" id="droneWise">
+                <img src="imagens/dronewise.png" alt="DroneWise">
+                <p>DroneWise - Monitoramento inteligente com drones</p>
             </div>
-            <div class="projeto">
-                <img src="Tourism-Rio" alt="Tourism-Rio">
-                <p>Projeto Tourism-Rio</p>
+            <div class="projeto" id="tourismRio">
+                <img src="imagens/tourismrio.png" alt="Tourism Rio">
+                <p>Tourism Rio - Guia turístico digital para o RJ</p>
             </div>
         </section>
     </main>
+
     <footer>
-        <p>se gostou me siga</p>
+        <p>Se gostou, me siga nas redes sociais!</p>
     </footer>
 </body>
 </html>

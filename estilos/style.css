@@ -1,3 +1,111 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #e0eafc, #cfdef3);
+    color: #333;
+}
+
+.cabecalho {
+    background-color: #2d3436;
+    color: white;
+    padding: 20px 40px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#links a {
+    margin: 0 15px;
+    color: #00cec9;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+#links a:hover {
+    color: #81ecec;
+}
+
+main {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #2d3436;
+    margin-bottom: 20px;
+    border-left: 5px solid #00cec9;
+    padding-left: 10px;
+}
+
+.linguagens, .projetos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.linguagem, .projeto {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    width: 260px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.linguagem:hover, .projeto:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+}
+
+.linguagem img, .projeto img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.bibliografia article {
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #2d3436;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .linguagem, .projeto {
+        width: 100%;
+        max-width: 90%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .cabecalho, footer {
+        padding: 15px;
+    }
 }
