@@ -20,6 +20,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra abaixo */
 }
 
+
 #links a {
     margin: 0 15px;
     color: #00cec9;
@@ -199,75 +200,4 @@ footer {
     padding: 20px;
     margin-top: 60px;
     font-size: 14px;
-}
-
-/* ===================== RESPONSIVIDADE ===================== */
-@media (max-width: 1024px) {
-    main {
-        flex-direction: column;
-        padding: 30px 15px;
-    }
-
-    .biografia, .conteudo {
-        flex: 1 1 100%;
-        margin: 0;
-    }
-
-    .foto-perfil {
-        width: 140px;
-        height: 140px;
-    }
-
-    .linguagens {
-        justify-content: center;
-    }
-
-    .linguagem {
-        width: 120px;
-        height: 120px;
-    }
-}
-
-@media (max-width: 768px) {
-    h2 {
-        font-size: 20px;
-    }
-
-    .linguagem {
-        width: 100px;
-        height: 100px;
-    }
-
-    .linguagem img {
-        width: 40px;
-        max-height: 40px;
-    }
-
-    .linguagem p {
-        font-size: 12px;
-    }
-
-    .projeto img, .certificado img {
-        width: 120px;
-    }
-}
-
-@media (max-width: 480px) {
-    .cabecalho {
-        padding: 15px;
-    }
-
-    h1 {
-        font-size: 18px;
-    }
-
-    #links a {
-        margin: 0 8px;
-        font-size: 14px;
-    }
-
-    footer {
-        padding: 15px;
-        font-size: 12px;
-    }
 }
