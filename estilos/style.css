@@ -1,203 +1,229 @@
-/* ===================== RESET & BASE ===================== */
+/* ========== BASE ========= */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif; /* Fonte base */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
-    background: linear-gradient(to right, #e0eafc, #cfdef3); /* Fundo suave */
-    color: #333; /* Cor padrão do texto */
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
+  color: #333;
 }
 
-/* ===================== CABEÇALHO ===================== */
+/* ========== CABEÇALHO ========= */
 .cabecalho {
-    background-color: #2d3436; /* Cor escura elegante */
-    color: white;
-    padding: 20px 40px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra abaixo */
+  background-color: #2d3436;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
+#links {
+  margin-top: 15px;
+}
 
 #links a {
-    margin: 0 15px;
-    color: #00cec9;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s; /* Suavidade na mudança */
+  color: #00cec9;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 500;
 }
 
 #links a:hover {
-    color: #81ecec; /* Efeito ao passar o mouse */
+  color: #81ecec;
 }
 
-/* ===================== LAYOUT PRINCIPAL ===================== */
+/* ========== TITULOS COM LINHA ========= */
+.titulo {
+  font-size: 24px;
+  color: #2d3436;
+  margin-bottom: 30px;
+  padding-left: 15px;
+  position: relative;
+  display: inline-block;
+}
+
+.titulo::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 4px;
+  height: 80%;
+  background-color: #00cec9;
+}
+
+/* ========== LAYOUT ========= */
 main {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 40px 20px;
-    max-width: 1200px;
-    margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .biografia {
-    flex: 1 1 300px;
-    margin-right: 40px;
-    text-align: center;
+  flex: 1 1 300px;
+  max-width: 350px;
+  margin-right: 40px;
+  text-align: center;
+}
+
+.biografia section h2 {
+  text-align: left;
+  margin-bottom: 20px;
 }
 
 .foto-perfil {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%; /* Foto redonda */
-    object-fit: cover;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    margin-bottom: 20px;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  margin-bottom: 20px;
+}
+
+.biografia article {
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: left;
 }
 
 .conteudo {
-    flex: 2 1 600px;
+  flex: 2 1 600px;
+  min-width: 300px;
 }
 
-section {
-    margin-bottom: 60px; /* Espaçamento entre sessões */
-}
-
-h2 {
-    font-size: 24px;
-    color: #2d3436;
-    margin-bottom: 20px;
-    border-left: 3px solid #00cec9;
-    padding-left: 10px;
-    line-height: 32px;
-    text-align: left;
-}
-
-/* ===================== LINGUAGENS (CARDS) ===================== */
+/* ========== LINGUAGENS ========= */
 .linguagens {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
-    gap: 15px;
-    margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+  margin-bottom: 60px;
 }
 
 .linguagem {
-    background-color: white;
-    border-radius: 16px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    width: 140px;
-    height: 140px;
-    padding: 15px;
-    margin: 5px;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    animation: fadeInUp 0.6s ease forwards;
-    opacity: 0;
-    transform: translateY(40px);
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  width: 140px;
+  height: 140px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* aqui é o segredo da centralização vertical */
+  text-align: center;
+  transition: transform 0.3s ease;
 }
 
+
 .linguagem img {
-    width: 50px;
-    height: auto;
-    max-height: 50px;
-    object-fit: contain;
-    margin-bottom: 8px;
-    transition: transform 0.3s ease;
+  width: 50px;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 8px;
 }
 
 .linguagem p {
-    font-size: 14px;
-    font-weight: 500;
-    margin-top: 5px;
-    transition: transform 0.3s ease, font-size 0.3s ease;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .linguagem:hover {
-    transform: scale(1.1); /* Efeito de destaque */
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  transform: scale(1.1);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
 
-.linguagem:hover img {
-    transform: scale(1.2);
+/* ========== PROJETOS E CERTIFICADOS ========= */
+.projetos, .certificados {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 60px;
 }
 
-.linguagem:hover p {
-    transform: scale(1.1);
-    font-size: 15px;
-}
-
-/* ===================== PROJETOS E CERTIFICADOS ===================== */
 .projeto, .certificado {
-    background-color: white;
-    border-radius: 12px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-    margin: 10px;
-    padding: 15px 10px;
-    text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
-    width: 100%;
-    opacity: 0;
-    transform: translateY(40px);
-    animation: fadeInUp 0.6s ease forwards;
-}
-
-.certificado {
-    width: 200px;
-    min-height: 100px;
-}
-
-.projeto {
-    min-height: 220px;
+  flex: 1 1 280px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
 }
 
 .projeto img, .certificado img {
-    width: 150px;
-    height: auto;
-    object-fit: contain;
-    margin-bottom: 10px;
-    transition: transform 0.3s ease;
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 10px;
 }
 
 .projeto:hover img, .certificado:hover img {
-    transform: scale(1.2);
+  transform: scale(1.05);
 }
 
 .projeto p, .certificado p {
-    font-size: 18px;
-    font-weight: 500;
-    margin-top: 10px;
-    transition: transform 0.3s ease, font-size 0.3s ease;
+  font-size: 16px;
+  margin-top: 10px;
+  line-height: 1.5;
 }
 
-.projeto:hover p, .certificado:hover p {
-    transform: scale(1.0);
-    font-size: 20px;
+.projeto .descricao {
+  font-size: 14px;
+  color: #555;
+  margin-top: 8px;
 }
 
-/* ===================== ANIMAÇÃO ===================== */
-@keyframes fadeInUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* ===================== BIOGRAFIA E FOOTER ===================== */
-.biografia article {
-    margin-bottom: 15px;
-    font-size: 16px;
-    line-height: 1.6;
-    text-align: left;
-}
-
+/* ========== RODAPÉ ========= */
 footer {
-    background-color: #2d3436;
-    color: white;
-    text-align: center;
+  background-color: #2d3436;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 60px;
+  font-size: 14px;
+}
+
+/* ========== RESPONSIVO ========= */
+@media screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
     padding: 20px;
-    margin-top: 60px;
-    font-size: 14px;
+  }
+
+  .biografia, .conteudo {
+    max-width: 100%;
+    margin-right: 0;
+  }
+
+  .linguagens, .projetos, .certificados {
+    justify-content: center;
+  }
+
+  .linguagem, .projeto, .certificado {
+    flex: 1 1 100%;
+  }
+
+  .titulo {
+    display: block;
+    text-align: center;
+  }
+
+  .titulo::before {
+    display: none; /* tira a linha no mobile se quiser */
+  }
+}
+
+.cards-projetos, .cards-certificados, .cards-linguagens {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
 }

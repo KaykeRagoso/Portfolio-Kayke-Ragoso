@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portfólio</title>
+  <title>Portifólio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
   <link rel="stylesheet" href="estilos/style.css"/>
-  <link rel="shortcut icon" href="imagens/portfolio.png" type="image/x-icon"/>
+  <link rel="shortcut icon" href="imagens/icons/portfolio.png" type="image/x-icon"/>
 </head>
 <body>
   <header class="cabecalho">
@@ -18,14 +18,14 @@
       <a href="https://www.linkedin.com/in/kayke-ragoso/">LinkedIn</a>
       <a href="https://github.com/KaykeRagoso">GitHub</a>
       <a href="https://www.instagram.com/kayke_ragoso/">Instagram</a>
-      <a href="imagens/CurrículoKayke.pdf">Curriculo</a>
+      <a href="imagens/pdfs/CurrículoKayke.pdf">Currículo</a>
     </nav>
   </header>
 
   <main>
     <aside class="biografia">
-      <img src="imagens/MinhaFoto.jpeg"" alt="Foto de Kayke Ragoso" class="foto-perfil"/>
-      <section class="bibliografia">
+      <img src="imagens/fotos/MinhaFoto.jpeg" alt="Foto de Kayke Ragoso" class="foto-perfil"/>
+      <section class="biografia">
         <h2>Sobre Mim</h2>
         <article>
           <p>Olá! Me chamo Kayke Ragoso e sou Desenvolvedor Fullstack. Tenho experiência com <strong>Java, SQL, JavaScript, React, React Native, HTML, CSS</strong> e outras tecnologias do ecossistema web, atuando tanto no frontend quanto no backend. <br><br>
@@ -41,50 +41,86 @@
 
     <section class="conteudo">
       <section class="linguagens">
-        <h2>Linguagens, Frameworks e Ferramentas que domino</h2>
-        <div class="linguagem"><img src="imagens/HTML256.png" alt="Html5"><p>HTML5</p></div>
-        <div class="linguagem"><img src="imagens/CSS256.png" alt="Css3"><p>CSS3</p></div>
-        <div class="linguagem"><img src="imagens/javascript.png" alt="JavaScript"><p>JavaScript</p></div>
-        <div class="linguagem"><img src="imagens/Java.png" alt="Java"><p>Java</p></div>
-        <div class="linguagem"><img src="imagens/React.png" alt="React"><p>React.Js</p></div>
-        <div class="linguagem"><img src="imagens/GitHub.png" alt="GitHub"><p>GitHub</p></div>
-        <div class="linguagem"><img src="imagens/Git.png" alt="Git"><p>Git</p></div>
-        <div class="linguagem"><img src="imagens/Python.png" alt="Python"><p>Python</p></div>
+        <h2 class="titulo">Linguagens, Frameworks e Ferramentas que domino</h2>
+        <div class="cards-linguagens">
+          <div class="linguagem"><img src="imagens/icons/HTML256.png" alt="Html5"><p>HTML5</p></div>
+          <div class="linguagem"><img src="imagens/icons/CSS256.png" alt="Css3"><p>CSS3</p></div>
+          <div class="linguagem"><img src="imagens/icons/javascript.png" alt="JavaScript"><p>JavaScript</p></div>
+          <div class="linguagem"><img src="imagens/icons/Java.png" alt="Java"><p>Java</p></div>
+          <div class="linguagem"><img src="imagens/icons/React.png" alt="React"><p>React.Js</p></div>
+          <div class="linguagem"><img src="imagens/icons/GitHub.png" alt="GitHub"><p>GitHub</p></div>
+          <div class="linguagem"><img src="imagens/icons/Git.png" alt="Git"><p>Git</p></div>
+          <div class="linguagem"><img src="imagens/icons/Python.png" alt="Python"><p>Python</p></div>
+        </div>
       </section>
 
       <section class="projetos">
-        <h2>Meus Projetos</h2>
+        <h2 class="titulo">Meus Projetos</h2>
 
-        <div class="projeto" id="conectCliente">
-          <a href="https://github.com/KaykeRagoso/ConectCliente" target="_blank">
-            <img src="imagens/ConectCliente.jpeg" alt="ConectCliente"/>
-          </a>
-          <p><strong>ConectCliente</strong> - Sistema de gestão para atendimento ao cliente</p>
-          <p class="descricao">Projeto backend e frontend completo em Java e HTML/CSS. Permite cadastro de clientes, registro de atendimento e geração de relatórios.</p>
-        </div>
-
-        <div class="projeto" id="tourismRio">
-          <a href="https://github.com/KaykeRagoso/Tourism-Rio" target="_blank">
-            <img src="imagens/TourismRio.jpg" alt="Tourism Rio"/>
-          </a>
-          <p><strong>Tourism Rio</strong> - Guia turístico digital para o RJ</p>
-          <p class="descricao">Plataforma web responsiva que conecta turistas aos pontos turísticos do Rio de Janeiro. Desenvolvido com HTML, JavaScript e Firebase.</p>
+        <div class="cards-projetos">
+          <div class="projeto" id="conectCliente">
+            <a href="https://github.com/KaykeRagoso/ConectCliente" target="_blank">
+              <img src="imagens/projetos/ConectCliente.jpeg" alt="ConectCliente"/>
+            </a>
+            <p><strong>ConectCliente</strong> - Sistema de Serviços de Drones</p>
+            <p class="descricao">Projeto mobile com React Native. Permite cadastro de clientes, solicitação de serviços de drones.</p>
+          </div>
+          <div class="projeto" id="tourismRio">
+            <a href="https://github.com/KaykeRagoso/Tourism-Rio" target="_blank">
+              <img src="imagens/projetos/TourismRio2.jpg" alt="Tourism Rio"/>
+            </a>
+            <p><strong>Tourism Rio</strong> - Guia turístico digital para o RJ</p>
+            <p class="descricao">Plataforma web responsiva que conecta turistas aos pontos turísticos do Rio de Janeiro. Desenvolvido com HTML, JavaScript e Firebase.</p>
+          </div>
         </div>
       </section>
 
       <section class="certificados">
-        <h2>Meus Certificados</h2>
-        <div class="certificado" id="unityEssentials">
-          <a href="imagens/CurriculoUnityEssentials.jpg" target="_blank">
-            <img src="imagens/CurriculoUnityEssentials.jpg" alt="CertificadoUnityEssentials"/>
-          </a>
-          <p>Unity Essentials Pathway</p>
-        </div>
-        <div class="certificado" id="introducaoPythonSantander">
-          <a href="imagens/PythonSantander.jpg" target="_blank">
-            <img src="imagens/PythonSantander.jpg" alt="CertificadoPythonSantander"/>
-          </a>
-          <p>Santander - Python</p>
+        <h2 class="titulo">Meus Certificados</h2>
+        <div class="cards-certificados">
+          <div class="certificado" id="unityEssentials">
+            <a href="imagens/imagenscurso/CurriculoUnityEssentials.jpg" target="_blank">
+              <img src="imagens/imagenscurso/CurriculoUnityEssentials.jpg" alt="CertificadoUnityEssentials"/>
+            </a>
+            <p>Unity Essentials Pathway</p>
+          </div>
+          <div class="certificado" id="introducaoPythonSantander">
+            <a href="imagens/imagenscurso/SantanderPython.jpg" target="_blank">
+              <img src="imagens/imagenscurso/SantanderPython.jpg" alt="CertificadoPythonSantander"/>
+            </a>
+            <p>Santander - Python</p>
+          </div>
+          <div class="certificado" id="HTML5eCCS3Modulo1">
+            <a href="imagens/imagenscurso/HTML5eCCS3Modulo1.jpg" target="_blank">
+              <img src="imagens/imagenscurso/HTML5eCCS3Modulo1.jpg" alt="HTML5eCCS3Modulo1"/>
+            </a>
+            <p>Curso em Vídeo HTML5 e CCS3 Módulo 1</p>
+          </div>
+          <div class="certificado" id="HTML5eCCS3Modulo2">
+            <a href="imagens/imagenscurso/HTML5eCCS3Modulo2.jpg" target="_blank">
+              <img src="imagens/imagenscurso/HTML5eCCS3Modulo2.jpg" alt="HTML5eCCS3Modulo2"/>
+            </a>
+            <p>Curso em Vídeo HTML5 e CCS3 Módulo 2</p>
+          </div>
+          <div class="certificado" id="HTML5eCCS3Modulo3">
+            <a href="imagens/imagenscurso/HTML5eCCS3Modulo3.jpg" target="_blank">
+              <img src="imagens/imagenscurso/HTML5eCCS3Modulo3.jpg" alt="HTML5eCCS3Modulo3"/>
+            </a>
+            <p>Curso em Vídeo HTML5 e CCS3 Módulo 3</p>
+          </div>
+          
+          <div class="certificado" id="HTML5eCCS3Modulo4">
+            <a href="imagens/imagenscurso/HTML5eCCS3Modulo4.jpg" target="_blank">
+              <img src="imagens/imagenscurso/HTML5eCCS3Modulo4.jpg" alt="HTML5eCCS3Modulo4"/>
+            </a>
+            <p>Curso em Vídeo HTML5 e CCS3 Módulo 4</p>
+          </div>
+          <div class="certificado" id="JavaScript">
+            <a href="imagens/imagenscurso/JavaScript.jpg" target="_blank">
+              <img src="imagens/imagenscurso/JavaScript.jpg" alt="JavaScript"/>
+            </a>
+            <p>Curso em Vídeo JavaScript </p>
+          </div>
         </div>
       </section>
     </section>
